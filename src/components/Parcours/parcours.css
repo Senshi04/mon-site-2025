@@ -1,0 +1,54 @@
+.parcours {
+    display: flex;
+    flex-direction: column;
+}
+
+.parcours-timeline {
+    margin: 2rem 40%;
+    display: flex;
+}
+
+.parcours-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 1rem 1rem 1rem;
+}
+
+.parcours-left-trait {
+    width: 1px;
+    height: 15vh;
+    border: 1px solid black;
+}
+
+.parcours-date {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px -2px #bebebe,-2px -2px 10px 1px #FFF, inset 3px 3px 3px #bebebe, inset -4px -4px 8px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parcours-desc {
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.parcours-text {
+    width: 30rem;
+}
+
+.parcours-date-ongoing {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 15px;
+    box-shadow: 6px 6px 5px -2px #bebebe,-2px -2px 10px 1px #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

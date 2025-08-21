@@ -1,0 +1,33 @@
+.navbar {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title, .navbar-title>*{
+    font-family: 'Trade Winds', sans-serif;
+    font-size: x-large;
+}
+
+.navbar-title>span {
+    color: green;
+}
+
+.navbar-menu .menu-links {
+    width: 50vw;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-link a {
+    font-size: 80%;
+}
+
+.navbar-btn {
+    color: palevioletred;
+    width: 5rem;
+}
