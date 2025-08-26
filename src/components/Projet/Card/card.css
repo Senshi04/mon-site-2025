@@ -1,10 +1,10 @@
 .card {
     flex: 0 0 auto;
     min-width: 30vw;
-    height: 60vh;
-    background: #fff;
+    height: 50vh;
+    background: #f4f4f4;
     border-radius: 20px;
-    box-shadow: 6px 6px 10px 1px #bebebe, 0px -8px 10px 10px #FFF;
+    box-shadow: 6px 6px 5px -2px #bebebe;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -62,4 +62,30 @@
 .project-desc p:nth-child(3) {
     font-size: small;
     color: #444;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        min-width: 40vw;  /* cartes un peu plus grandes sur tablette */
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 70vw;  /* une seule carte presque pleine largeur */
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        min-width: 90vw;  /* presque toute la largeur de l'écran */
+        height: 45vh;
+    }
+
+    .card-img span {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
 }

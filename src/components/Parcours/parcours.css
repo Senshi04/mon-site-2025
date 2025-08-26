@@ -1,54 +1,94 @@
 .parcours {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .parcours-timeline {
-    margin: 2rem 40%;
     display: flex;
+    width: 100%;
+    padding-left: 40%; 
+    margin: 2rem 0;
 }
 
 .parcours-left {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 2rem 1rem 1rem 1rem;
+    align-items: center;
+    margin-right: 1rem; /* espace entre icône et texte */
+    min-width: 50px;
 }
 
 .parcours-left-trait {
-    width: 1px;
-    height: 15vh;
-    border: 1px solid black;
-}
-
-.parcours-date {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 15px;
-    box-shadow: 6px 6px 5px -2px #bebebe,-2px -2px 10px 1px #FFF, inset 3px 3px 3px #bebebe, inset -4px -4px 8px #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    margin-top: 0.5rem;
 }
 
 .parcours-desc {
-    width: 10rem;
+    flex: 1;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
 }
 
 .parcours-text {
-    width: 30rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
-.parcours-date-ongoing {
+.parcours-date, .parcours-date-ongoing {
     width: 10rem;
     height: 3rem;
     border-radius: 15px;
-    box-shadow: 6px 6px 5px -2px #bebebe,-2px -2px 10px 1px #FFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 6px 6px 5px -2px #bebebe,-2px -2px 10px 1px #FFF, inset 3px 3px 3px #bebebe, inset -4px -4px 8px #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.parcours-date-ongoing {
+    box-shadow: 6px 6px 5px -2px #bebebe,-2px -2px 10px 1px #FFF;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .parcours-timeline {
+        padding-left: 20%; 
+    }
+
+    .parcours-left-trait {
+        height: 100%;
+    }
+
+    .parcours-text {
+        font-size: 0.9rem;
+    }
+
+    .parcours-desc {
+        flex: 1;
+        margin-left: 0.5rem; /* petit espace sur mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .parcours-timeline {
+        padding-left: 20%; 
+    }
+
+    .parcours-left {
+        display: flex;
+        flex-direction: column; /* icône au-dessus du trait */
+        align-items: center;
+    }
+
+    .parcours-left-trait {
+        height: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .parcours-text {
+        font-size: 0.85rem;
+    }
 }

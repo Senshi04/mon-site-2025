@@ -1,22 +1,54 @@
-import React from 'react'
-import './navbar.css'
+import React, { useState } from "react";
+import "./navbar.css";
+
+import Contact from "../Contact/Contact";
 
 const Navbar = () => {
-  return (
-    <nav className='navbar'>
-        <span className='navbar-title'>IN<span>DIA</span></span>
-        <div className='navbar-menu'>
-            <ul className='menu-links'>
-                <li className='menu-link'><a>ACCUEIL</a></li>
-                <li className='menu-link'><a>PROJETS</a></li>
-                <li className='menu-link'><a>SKILLS</a></li>
-                <li className='menu-link'><a>PARCOURS</a></li>
-                <li className='menu-link'><a>A PROPOS</a></li>
-            </ul>
-        </div>
-        <button className='navbar-btn primary-button'>CONTACT</button>
-    </nav>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
+  const openContact = () => {
+    setIsContactOpen(true);
+  };
+
+  const closeContact = () => {
+    setIsContactOpen(false);
+  };
+
+  return (
+    <header className="navbar">
+      <div className="logo">IN<span>DIA</span></div>
+
+      <nav className={`nav-links ${isOpen ? "open" : ""}`}>
+        <a href="#accueil" onClick={closeMenu}>ACCUEIL</a>
+        <a href="#parcours" onClick={closeMenu}>PARCOURS</a>
+        <a href="#projets" onClick={closeMenu}>PROJETS</a>
+        <a href="#a-propos" onClick={closeMenu}>À PROPOS</a>
+      </nav>
+
+      <button className="contact-btn primary-button" onClick={() => {openContact(); closeMenu()}}>
+        Contact
+      </button>
+
+      <div className="hamburger" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {isContactOpen && <Contact onClose={closeContact} />}
+
+    </header>
+  );
+};
+
+export default Navbar;

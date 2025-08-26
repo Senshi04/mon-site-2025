@@ -48,3 +48,55 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* Responsive pour tablettes */
+@media screen and (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        padding-top: 10vh;
+    }
+
+    .intro-desc {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .intro-text span {
+        font-size: 2rem;
+    }
+
+    .intro-btn {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    .intro-photo {
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+
+/* Responsive pour mobiles */
+@media screen and (max-width: 600px) {
+    .intro-text span {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+    }
+
+    .intro-btn {
+        width: 70%;
+        padding: 0.8rem 0;
+    }
+
+    .intro-photo {
+        width: 100%;
+        height: auto;
+    }
+}
