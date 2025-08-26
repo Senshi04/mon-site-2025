@@ -1,0 +1,102 @@
+.intro {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.intro-desc {
+    width: 60vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-text {
+    height: 60%;
+    color: grey;
+    font-weight: 300;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intro-text span {
+    color: black;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.intro-btn {
+    color: limegreen;
+    width: 10rem;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.intro-photo {
+    position: relative;
+    width: 50%;
+    height: 80%;
+}
+
+.intro-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive pour tablettes */
+@media screen and (max-width: 1024px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        padding-top: 10vh;
+    }
+
+    .intro-desc {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .intro-text span {
+        font-size: 2rem;
+    }
+
+    .intro-btn {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    .intro-photo {
+        width: 80%;
+        height: auto;
+        margin-top: 2rem;
+    }
+}
+
+/* Responsive pour mobiles */
+@media screen and (max-width: 600px) {
+    .intro-text span {
+        font-size: 1.5rem;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+    }
+
+    .intro-btn {
+        width: 70%;
+        padding: 0.8rem 0;
+    }
+
+    .intro-photo {
+        width: 100%;
+        height: auto;
+    }
+}

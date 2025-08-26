@@ -1,0 +1,91 @@
+.card {
+    flex: 0 0 auto;
+    min-width: 30vw;
+    height: 50vh;
+    background: #f4f4f4;
+    border-radius: 20px;
+    box-shadow: 6px 6px 5px -2px #bebebe;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img p {
+    position: absolute;
+    top: 1rem;
+    right: 10px;
+    margin: 0;
+}
+
+.card-img span {
+    background: grey;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.project-desc {
+    padding: 1rem;
+}
+
+.project-desc p:nth-child(1) {
+    font-size: small;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc p:nth-child(2) {
+    font-size: medium;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc p:nth-child(3) {
+    font-size: small;
+    color: #444;
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        min-width: 40vw;  /* cartes un peu plus grandes sur tablette */
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        min-width: 70vw;  /* une seule carte presque pleine largeur */
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        min-width: 90vw;  /* presque toute la largeur de l'écran */
+        height: 45vh;
+    }
+
+    .card-img span {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

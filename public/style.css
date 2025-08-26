@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #f4f4f4;
+    padding: 0 2rem;
+}
+
+.primary-button {
+  appearance: none;
+  border: none;
+  background: none;
+  padding:  0 5rem;
+  height: 3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 4px 5px 10px -3px rgba(0,0,0,0.1),-4px -4px 10px -2px #FFF;
+  transition: 0.2s;
+}
+
+.primary-button:hover {
+  border-radius: 20px;
+  box-shadow: 4px 5px 10px -3px rgba(0,0,0,0.3),-4px -4px 15px -2px #FFF;
+}
+
+.container-primary-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-primary-title .primary-title {
+  margin-bottom: -1rem;
+  z-index: 2;
+  /* font-size: larger; */
+}
+
+.container-secondary-title .seconday-title {
+  text-align: center;
+  color: grey;
+}
+
+.primary-title-border-1 {
+  height: 1rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+}
+
+
+.primary-title-border-2 {
+  height: 1rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: limegreen;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #54B717;
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+a:hover {
+  color: #ee4c85;  
+}
+
+.neumorphism-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.neumorphism-title h1 {
+  margin: 0;
+  padding: 0;
+  color: #F5F5F5;
+  text-shadow: 0px 4px 4px rgba(0,0,0,0.1), -5px -5px 10px white;
+  font-size: 20vw;
+}
