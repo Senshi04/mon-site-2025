@@ -1,0 +1,66 @@
+.modal-contact-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 30vw;
+    overflow-y: auto;       /* Ajoute un scroll si le contenu dépasse */
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-contact-content h2 {
+    margin: 1rem;
+    text-align: center;
+}
+
+.contact-info {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info p {
+    font-size: smaller;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Tablettes (moins de 1024px) */
+@media (max-width: 1024px) {
+    .modal-contact-content {
+        width: 50vw;
+        padding: 1.5rem;
+    }
+}
+
+/* Smartphones (moins de 768px) */
+@media (max-width: 768px) {
+    .modal-contact-content {
+        width: 70vw;
+        padding: 1rem;
+    }
+
+    .modal-contact-content h2 {
+        margin-top: 3rem;
+    }
+}
+
+/* Petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    .modal-contact-content {
+        width: 90vw;
+        padding: 0.8rem;
+    }
+    
+    .modal-contact-content h2 {
+        margin-top: 3rem;
+    }
+}
