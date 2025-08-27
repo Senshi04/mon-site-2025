@@ -11,6 +11,10 @@
 
 @media screen and (max-width: 480px) {
 
+    .container-card {
+        padding: 3rem 1rem;
+    }
+
     .project-desc p:nth-child(2) {
         font-size: 0.9rem; /* titre légèrement plus petit */
     }
