@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# India - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce site est l’aboutissement de mes 3 années de BUT Informatique. Il met en avant mes compétences en développement web moderne avec React, la gestion d’une base de données via Supabase, et le déploiement sur Render pour un accès public.
+J’y présente mon parcours, mes projets et l’un de mes centres d’intérêt personnels. Le site est responsive, accessible sur mobile et desktop.
 
-## Available Scripts
+## Détails
 
-In the project directory, you can run:
+### Style
 
-### `npm start`
+**Neumorphisme**
+J'ai choisi d'utiliser ce style de design car j'apprécie beaucoup l'effet de relief donnant l'impression qu'un bouton est appuyé ou ressort de la page tout en gardant un aspect très moderne et épuré.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Printemps**
+Pour ce qui est des couleurs utilisées dans mon site, ce seront le rose et le vert qui reviendront le plus. Elles représentent à elle deux, cette saison rafraichissante et douce, qu'est le printemps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Pages
 
-### `npm test`
+- **Accueil** (Présentation personnelle)
+- **Parcours** (Frise chrologique)
+- **Projet** (Slider horizontal de cartes, modal détaillé par projet avec images)
+- **À propos** (Texte personnel, embeds Instagram + vidéo YouTube
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Technologies utilisées 
 
-### `npm run build`
+- **Front** : React (Create React App), CSS
+- **Base de données** : Supabase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Table **Projet** : 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| id | title     | type    | year | desc_lil      | desc_long          | mockups                                                  |
+|:--:|-----------|---------|------|---------------|--------------------|----------------------------------------------------------|
+| 1  | Portfolio | Web App | 2025 | Mon Portfolio | Voici mon portolio | {"link_1": "nom_image1.png", "link_2": "nom_image2.png"} |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Déploiement** : Render - Static Site
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Lancer en local
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone https://github.com/Senshi04/mon-site-2025.git
+cd mon-site-2025
+npm install
+# Crée .env avec tes clés Supabase
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dev server : [http://localhost:3000]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Déploiement 
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Render** (Static Site) : [https://india-portfolio.onrender.com]
