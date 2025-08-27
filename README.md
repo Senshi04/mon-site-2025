@@ -14,14 +14,14 @@ J'ai choisi d'utiliser ce style de design car j'apprécie beaucoup l'effet de re
 Pour ce qui est des couleurs utilisées dans mon site, ce seront le rose et le vert qui reviendront le plus. Elles représentent à elle deux, cette saison rafraichissante et douce, qu'est le printemps.
 \
 ### Pages
-\
+
 - **Accueil** (Présentation personnelle)
 - **Parcours** (Frise chrologique)
 - **Projet** (Slider horizontal de cartes, modal détaillé par projet avec images)
 - **À propos** (Texte personnel, embeds Instagram + vidéo YouTube
 \
 ### Technologies utilisées 
-\
+
 - **Front** : React (Create React App), CSS
 - **Base de données** : Supabase
 \
