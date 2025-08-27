@@ -32,7 +32,7 @@ const APropos = () => {
                 </div>
                 <iframe width="90%" height="400" src="https://www.youtube.com/embed/Ex_nvXF5zLk?si=2ExX3kStP1-VEg2G&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <p>
-                    J’ai pu rejoindre un groupe de danse au style K-POP et HIP HOP. D’ailleurs, nous sommes également une <strong>association</strong> à but non lucratif.  Ainsi, j’ai déjà eu l'occasion de donner cours de danse à de jeunes enfants (entre 10 et 15 ans).
+                    J’ai pu rejoindre un groupe de danse au style K-POP et HIP HOP. D’ailleurs, nous sommes également une <strong>association</strong> à but non lucratif.  Ainsi, j’ai déjà eu l'occasion de donner des cours de danse à de jeunes enfants (entre 10 et 15 ans).
                     La danse m’a aidé à devenir une personne plus ouverte aux autres, moins réservée et timide. Elle permet également de stimuler ma <strong>créativité</strong> et ma <strong>rigueur</strong> chaque jour. 
                 </p>
             </div>

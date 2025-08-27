@@ -29,15 +29,18 @@ const Navbar = () => {
       <div className="logo">IN<span>DIA</span></div>
 
       <nav className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a href="#accueil" onClick={closeMenu}>ACCUEIL</a>
-        <a href="#parcours" onClick={closeMenu}>PARCOURS</a>
-        <a href="#projets" onClick={closeMenu}>PROJETS</a>
-        <a href="#a-propos" onClick={closeMenu}>À PROPOS</a>
+        <div>
+          <a href="#accueil" onClick={closeMenu}>ACCUEIL</a>
+          <a href="#parcours" onClick={closeMenu}>PARCOURS</a>
+          <a href="#projets" onClick={closeMenu}>PROJETS</a>
+          <a href="#a-propos" onClick={closeMenu}>À PROPOS</a>
+        </div>
+
+        <button className="contact-btn primary-button" onClick={() => {openContact(); closeMenu()}}>
+          Contact
+        </button>
       </nav>
 
-      <button className="contact-btn primary-button" onClick={() => {openContact(); closeMenu()}}>
-        Contact
-      </button>
 
       <div className="hamburger" onClick={toggleMenu}>
         <span></span>

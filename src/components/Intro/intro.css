@@ -8,6 +8,7 @@
 .intro-desc {
     width: 60vw;
     height: 40vh;
+    padding: 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
