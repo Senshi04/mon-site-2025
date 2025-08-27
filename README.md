@@ -1,6 +1,6 @@
 # India - Portfolio
 
-Ce site est l’aboutissement de mes 3 années de BUT Informatique. Il met en avant mes compétences en développement web moderne avec React, la gestion d’une base de données via Supabase, et le déploiement sur Render pour un accès public.
+Ce site représente l’aboutissement de mes 3 années de BUT Informatique. Il met en avant mes compétences en développement web moderne avec React, la gestion d’une base de données via Supabase, et le déploiement sur Render pour un accès public.
 J’y présente mon parcours, mes projets et l’un de mes centres d’intérêt personnels. Le site est responsive, accessible sur mobile et desktop.
 
 ## Détails
