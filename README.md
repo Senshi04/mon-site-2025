@@ -30,7 +30,7 @@ Table **Projet** :
 | id | title     | type    | year | desc_lil      | desc_long          | mockups                                                  |
 |:--:|-----------|---------|------|---------------|--------------------|----------------------------------------------------------|
 | 1  | Portfolio | Web App | 2025 | Mon Portfolio | Voici mon portolio | {"link_1": "nom_image1.png", "link_2": "nom_image2.png"} |
-\
+
 - **Déploiement** : Render - Static Site
 \
 ## Lancer en local
@@ -42,12 +42,12 @@ npm install
 npm start
 \
 Dev server : [http://localhost:3000]
-\
+
 ## Déploiement 
 
 **Render** (Static Site) : [https://india-portfolio.onrender.com]
 
 ## Auteur
 
-India CABO \ 
+India CABO
 Ce site est utilisé à des buts de portfolio.
