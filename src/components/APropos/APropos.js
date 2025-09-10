@@ -23,7 +23,7 @@ const APropos = () => {
                 <div className='container-side-desc'>
                     <div className='container-left-desc'>
                         <p>La danse est une activité que je pratique sérieusemment depuis 4 ans. Mon parcours de danseuse est une <strong>source d'inspiration constante</strong> pour mon travail et mes projets. Elle me permet d'explorer de nouvelles perspectives et de me <strong>dépasser</strong> sans cesse.</p>
-                        <InstagramEmbed url={"https://www.instagram.com/reel/CzO0O3hITGL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==}"}/>
+                        <InstagramEmbed url={"https://www.instagram.com/reel/DIHEDYZgKvg/}"}/>
                     </div>
                     <div className='container-right-desc'>
                         <InstagramEmbed url={"https://www.instagram.com/reel/C0HCvIytIf_/"} />
@@ -41,5 +41,6 @@ const APropos = () => {
     </section>
   )
 }
+
 
 export default APropos
