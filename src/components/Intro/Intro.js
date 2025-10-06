@@ -7,11 +7,11 @@ const Intro = () => {
       <div className='intro-desc'>
         <p className='intro-text'>
           <span>Hello,<br/>je suis India CABO !</span><br/>
-          En troisième année de BUT Informatique à l'IUT de Villetaneuse (USPN), la conception d'applications et le design numérique m'attirent grandement. Je m'apprête à commencer le cycle d'ingénieur en apprentissage à l'ESIEE Paris, en tant que chargé d'automatisation des processus à la FDJ United. 
+          L'ingénierie logicielle m'intéresse énormément. Ainsi, j'effectue un cycle d'ingénieur en apprentissage à l'ESIEE Paris en filière "Informatique et Applications". Parallèlement, je suis en alternance à la FDJ United en tant que chargé d'automatisation des processus. 
         </p>
         <button className='intro-btn primary-button' onClick={() => window.open("/assets/mon-cv.pdf", "_blank")}>Télécharger CV</button>
       </div>
-      <img className='intro-photo' alt='moi' src="/assets/moi.png"></img>
+      <img className='intro-photo' alt='moi' src="/assets/photo-moi.jpg"></img>
     </section>
     )
 }
